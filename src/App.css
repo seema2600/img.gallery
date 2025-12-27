@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  
+  
+}
+
+.app {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 12px;
+  background-color: gray;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  background: #f5f5f5;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* ✅ FIXES STRETCH */
+  object-fit: cover;
+
+}
+
+.card p {
+  margin-top: 6px;
+  font-size: 11px;
+}
